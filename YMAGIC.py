@@ -44,9 +44,8 @@ while True:
         print(Fore.WHITE + str(msg.decode()))
         input(Fore.YELLOW + "[!] " + Fore.WHITE + "Press any key to clear page and start tool again")
     elif select_options == "sub":
-        c = Fore.GREEN + "[+] " + Fore.WHITE + "YMAGIC/WOIS/SUBDOMAIN/subdomain files path > "
-        file = input(c)
-        domain = input(Fore.GREEN + "[+] " + Fore.WHITE + "YMAGIC/WOIS/SUBDOMAIN/subdomain name > ")
+        file = "subdomain.txt"
+        domain = input(Fore.GREEN + "[+] " + Fore.WHITE + "YMAGIC/WOIS/SUBDOMAIN/Domain name > ")
         file = open(file)
         content = file.read()
         subdomains = content.splitlines()
